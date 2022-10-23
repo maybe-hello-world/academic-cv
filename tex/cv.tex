@@ -1,0 +1,145 @@
+\documentclass{scv}
+
+\begin{document}
+
+%-----------HEADER--------------
+\resumeHeader{Roman Beltiukov}{805-284-2410}{maybe.hello.world@gmail.com}{maybe-hello-world.github.io}{maybe-hello-world}{skykell}
+
+%-----RESEARCH INTERESTS--------
+\section{Research Interests}
+    \justifying
+    My current research lies at the intersection of networking, security, and machine learning. Specifically, I am interested in developing credible ML-based artifacts for different networking and security problems.
+\vspace{-10pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingWithText
+      {University of California, Santa Barbara}{Expected: August 2025}
+      {Doctor of Philosophy (Ph.D.), Computer Science}{}
+      {
+        Adviser: Arpit Gupta.\\
+        I have been working on democratizing networking research in the era of AI/ML, and developing credible ML artifacts for networking problems. Specifically, I have been working on fundamentally redesigning the ML pipeline for networking, enabling development of credible and explainable ML models. I am also working on learning the ``right" representations for network data.}{}
+    \resumeSubheading
+      {Peter the Great St.Petersburg Polytechnic University}{August 2019}
+      {Master of Science (M.S.), Computer Science}{}
+    \resumeSubheading
+      {Peter the Great St.Petersburg Polytechnic University}{August 2017}
+      {Bachelor of Science (B.S.), Computer Science}{}
+  \resumeSubHeadingListEnd
+    
+%-----------EXPERIENCE-----------
+\vspace{-10pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading 
+      {Graduate Research Assistant}{September 2021 -- Present}
+      {University of California Santa Barbara}{Santa Barbara, California}
+      \resumeItemListStart
+        \resumeItem{Developed a novel data-collection platform, \textit{NetUnicorn}, that simplifies (iteratively) curating high-quality data for different learning problems from diverse network environments.}
+        \resumeItem{Developed a model analysis tool, \textit{Trustee}~\cite{trustee} that aims to identify underpsecification issues in existing blackbox ML models.}
+      \resumeItemListEnd
+
+    \resumeSubheading 
+      {On-Device Machine Learning Researcher}{March 2020 -- September 2021}
+      {Huawei}{St.Petersburg, Russia}
+      \resumeItemListStart
+        \resumeItem{Team: Network services for mobile devices}
+        \resumeItem{Researched onboard machine learning techniques, including better neural network distillation, pruning, and mobile device inference optimization strategies}
+        \resumeItem{Developed an ML-based network connection optimization system for Android devices}
+        \resumeItem{Developed a custom Forward Error Correction algorithm for Huawei mobile devices.}
+        \resumeItem{Developed a system for user network performance using both on‑device and operator information.}
+    \resumeItemListEnd
+      
+    \resumeSubheading 
+      {Junior Reinforcement Learning Researcher}{October 2019 -- June 2020}
+      {JetBrains Research}{St.Petersburg, Russia}
+      \resumeItemListStart
+        \resumeItem{Reproduced and adapted several approaches to domain-specific tasks.}
+        \resumeItem{Researched how to improve the usage of the Prioritized Experience Replay for World Models approach.}
+      \resumeItemListEnd
+
+    \resumeSubheading 
+      {Python tutor}{September 2018 -- September 2020}
+      {Higher School of Engineering}{St.Petersburg, Russia}
+      \resumeItemListStart
+        \resumeItem{Participated as an instructor of Python professional education program.}
+        \resumeItem{Developed several Python courses (from scratch) for a diverse group of participants.}
+        \resumeItem{Wrote a task book for Python learners with tasks of different complexity.}
+        \resumeItem{Served as a member of the thesis defense committee for the Python education program for three years in a row.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%----------PUBLICATIONS---------
+\nocite{trustee,qfac}
+\resumePublications
+
+%---------Presentations---------
+\section{Presentations}
+  \resumeSubHeadingListStart
+  \resumeItemWithText
+  {netUnicorn: A Unified and Modular Data-Collection Platform
+  for Developing Credible ML Models for Networking}
+  {Universities: UC Santa Barbara (05/22), The University of Chicago (10/22)}
+  \resumeSubHeadingListEnd
+\vspace{-22pt}
+
+%----------AWARDS---------------
+\section{Awards}
+  \resumeSubHeadingListStart
+  \resumeSubSubheading{\textbf{Finalist}, Junction Hackathon, "Mobility Track", QOCO}{2018}
+  \resumeSubSubheading{\textbf{Track Winner}, World IT Planet championship, Cloud Computing Track by Huawei}{2018}
+  \resumeSubSubheading{\textbf{Special Award}, Institue of BioInformatics, EPAM Systems}{2018}
+  \resumeSubSubheading{\textbf{Track Winner}, World IT Planet championship, Cloud Computing Track by Huawei}{2017}
+  \resumeSubSubheading{\textbf{Challenge winner}, Junction Hackathon, "Robots and Learning Machines track", Eficode}{2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Selected Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{netUnicorn}}{}
+          \resumeItemListStart
+            \resumeItem{NetUnicorn simplifies (iteratively) curating high-quality data for different learning problems from diverse network environments.}
+            \resumeItem{Provides abstractions and infrastructure interaction for developers of data collection pipelines and measurement experiments.}
+            \resumeItem{Contribution: system architecture, platform backend, team leading.}
+            \resumeItem{Technologies: Python, REST API, PostgreSQL, Networking, Explainable AI}
+            \resumeItem{In development.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{digestbot}}{}
+          \resumeItemListStart
+            \resumeItem{Bot for Slack that finds most popular messages in channels and creates digests of them.}
+            \resumeItem{Developed for ODS.ai community Slack of 50 000+ participants.}
+            \resumeItem{Contribution: system architecture, backend, UI, CI/CD, tean leading.}
+            \resumeItem{Technologies: Python, PostgreSQL, Slack API}
+            \resumeItem{In production since 2020.}
+          \resumeItemListEnd 
+        \resumeProjectHeading
+          {\textbf{Tortilla}}{}
+          \resumeItemListStart
+            \resumeItem{Tortilla is an Apache Guacamole based project developed to give users access to their virtual machines located on Hyper-V hosts.}
+            \resumeItem{Provides a console through RDP/SSH and uses HTML5 to work in modern web browsers.}
+            \resumeItem{Contribution: system architecture, system controller, SCVMM API access, team leading.}
+            \resumeItem{Technologies: Python, C\#, REST API, Java, SCVMM, HTML5}
+            \resumeItem{In production since 2018.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\vspace{-14pt}
+
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\resumeSkillListStart
+  \resumeSkillItem{Machine Learning}{Reinforcement Learning, Classic Machine Learning, Deep Learning, PyTorch}
+  \resumeSkillItem{Programming}{Python, C\#, Rust, SQL, C/C++}
+  \resumeSkillItem{Other}{Docker, Virtual Machines (Hyper-V, Xen), Clouds (Azure, AWS, GCP, SCVMM), Databases, Spark, Linux (Debian-based) systems, Networking, Data Storage Systems, Git}
+\resumeSkillListEnd
+
+
+\end{document}
