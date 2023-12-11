@@ -143,7 +143,7 @@
 
 \newcommand{\resumeHeader}[6]{
   \begin{center}
-    {\Huge \scshape #1} \\ \vspace{1pt}
+    {\Large \scshape #1} \\ \vspace{1pt}
 
     \def\param{#2}%
     \ifx\param\empty
