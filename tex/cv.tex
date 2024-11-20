@@ -8,8 +8,8 @@
 %-----RESEARCH INTERESTS--------
 \section{Research Interests}
     \justifying
-    My current research lies at the intersection of networking, security, and machine learning. 
-    I am interested in developing credible ML-based artifacts and data representations for different networking and security problems, and democratizing network research by creating public measurement infrastructures and tools.
+    My current research lies at the intersection of networking and machine learning, especially network transformers and foundations models. 
+    I am interested in developing credible ML-based artifacts and data representations for different networking and security problems, and democratizing network research by creating public measurement infrastructures, datasets, and tools.
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -18,7 +18,9 @@
       {University of California, Santa Barbara}{Expected: August 2026}
       {Doctor of Philosophy (Ph.D.), Computer Science}{}
       {Advisor: Arpit Gupta.\\
-        I have been working on democratizing networking research in the era of AI/ML and developing credible ML artifacts for networking problems. Specifically, I have been working on fundamentally redesigning the ML pipeline for networking, enabling the development of credible and explainable ML models, and a diverse and representative network infrastructure to collect data from.}{}
+        I have been working on democratizing networking research in the era of AI/ML and developing credible ML artifacts for networking problems.%
+        Specifically, I have been working on fundamentally redesigning the ML pipeline for networking, enabling the development of credible and explainable ML models, diverse and representative network infrastructures to collect data from, and %
+        creating large foundation models for network traffic.}{}
     \resumeSubheading
       {Peter the Great St.Petersburg Polytechnic University}{August 2019}
       {Master of Science (M.S.), Computer Science}{}
@@ -35,8 +37,9 @@
       {Graduate Research Assistant}{January 2021 -- Present}
       {University of California Santa Barbara}{Santa Barbara, California}
       \resumeItemListStart
-        \resumeItem{Developed a novel data-collection tool, \textit{netUnicorn}, that simplifies (iteratively) curating high-quality data for different learning problems from diverse network environments.}
-        \resumeItem{Created a university-based network measurements infrastructure, \textit{PINOT}, that allows the collection of representative networking datasets from a real-world environment.}
+        \resumeItem{Developed a high-quality pretrained transformer model working with network traffic data, \textit{netFound}~\cite{guthula2024netfoundfoundationmodelnetwork}, that produces high-quality embeddings for different network tasks.}
+        \resumeItem{Developed a novel data-collection tool, \textit{netUnicorn}~\cite{beltiukov2023search}, that simplifies (iteratively) curating high-quality data for different learning problems from diverse network environments.}
+        \resumeItem{Created a university-based network measurements infrastructure, \textit{PINOT}~\cite{beltiukov2023pinot}, that allows the collection of representative networking datasets from a real-world environment.}
         \resumeItem{Developed a model analysis tool, \textit{Trustee}~\cite{trustee} to identify underspecification issues in existing black box ML models.}
       \resumeItemListEnd
     
@@ -69,26 +72,27 @@
   \resumeSubHeadingListEnd
 
 %----------PUBLICATIONS---------
-\nocite{beltiukov2023search,trustee,qfac,beltiukov2023pinot}
+\nocite{guthula2024netfoundfoundationmodelnetwork,beltiukov2023search,trustee,qfac,beltiukov2023pinot}
 \resumePublications
 
-%---------Presentations---------
-\section{Invited Talks}
-  \resumeSubHeadingListStart
-  \resumeItemWithText
-  {In Search of netUnicorn: A Data-Collection Platform to Develop Generalizable ML Models for Network Security Problems}
-  {UC Santa Barbara (05/22), The University of Chicago (10/22), ACM SIGMETRICS Workshop on Measurements for Self-Driving Networks (06/23)}
-  \resumeSubHeadingListEnd
+% %---------Presentations---------
+% \section{Invited Talks}
+%   \resumeSubHeadingListStart
+%   \resumeItemWithText
+%   {In Search of netUnicorn: A Data-Collection Platform to Develop Generalizable ML Models for Network Security Problems}
+%   {UC Santa Barbara (05/22), The University of Chicago (10/22), ACM SIGMETRICS Workshop on Measurements for Self-Driving Networks (06/23)}
+%   \resumeSubHeadingListEnd
 
 %----------AWARDS---------------
 \section{Honors \& Awards}
   \resumeSubHeadingListStart
+  \resumeSubSubheading{\textbf{Best Paper Honorable Mention}, IETF Applied Networking Prize}{2023}
   \resumeSubSubheading{\textbf{Winner}, UCSB CS Department Summer Fellowship Award}{2023}
-  \resumeSubSubheading{\textbf{Finalist}, Junction Hackathon, "Mobility Track", QOCO}{2018}
+  % \resumeSubSubheading{\textbf{Finalist}, Junction Hackathon, "Mobility Track", QOCO}{2018}
   \resumeSubSubheading{\textbf{Track Winner}, World IT Planet championship, Cloud Computing Track by Huawei}{2018}
   \resumeSubSubheading{\textbf{Special Award}, Institute of Bioinformatics, EPAM Systems}{2018}
   \resumeSubSubheading{\textbf{Track Winner}, World IT Planet championship, Cloud Computing Track by Huawei}{2017}
-  \resumeSubSubheading{\textbf{Challenge winner}, Junction Hackathon, "Robots and Learning Machines track", Eficode}{2017}
+  % \resumeSubSubheading{\textbf{Challenge winner}, Junction Hackathon, "Robots and Learning Machines track", Eficode}{2017}
   \resumeSubHeadingListEnd
 
 
@@ -96,13 +100,21 @@
 \section{Selected Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
+        {\textbf{netFound}}{}
+        \resumeItemListStart
+          \resumeItem{netFound is a network traffic transformer model, allowing to utilize vast amount of unlabeled data to create powerful representations for different network tasks.}
+          % \resumeItem{Provides abstractions and infrastructure interaction for developers of data collection pipelines and measurement experiments.}
+          \resumeItem{Contribution: data processing, model and data scaling, training optimization, model dissection.}
+          \resumeItem{Technologies: Python, Networking, LLM, Transformer models}
+        \resumeItemListEnd
+        \resumeProjectHeading
           {\textbf{netUnicorn}}{}
           \resumeItemListStart
             \resumeItem{netUnicorn simplifies (iteratively) curating high-quality data for different learning problems from diverse network environments.}
             % \resumeItem{Provides abstractions and infrastructure interaction for developers of data collection pipelines and measurement experiments.}
-            \resumeItem{Contribution: system architecture, platform backend, team leading.}
+            % \resumeItem{Contribution: system architecture, platform backend, team leading.}
             \resumeItem{Technologies: Python, REST API, PostgreSQL, Networking, Explainable AI}
-            \resumeItem{Deployed in University of California, Santa Barbara.}
+            \resumeItem{Deployed in University of California, Santa Barbara and ETH Zurich}
           \resumeItemListEnd
         \resumeProjectHeading
           {\textbf{PINOT}}{}
